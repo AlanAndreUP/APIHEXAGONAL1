@@ -2,6 +2,8 @@ import express from 'express'
 import AnimalsRouter from './animals/infraestructure/AnimalRoutes'
 import ZooRouter from './zoo/infraestructure/ZooRoutes'
 const app = express();
+const cors = require('cors');
+app.use(cors());
 app.disable("x-powered-by");
 
 
